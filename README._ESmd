@@ -1,0 +1,131 @@
+# Dominando la Terminal Linux: Guía Completa y Cheatsheet
+
+Este repositorio ofrece un **resumen completo de los comandos esenciales de la terminal de Linux**, inspirado en el curso *"Dominando la Terminal Linux"*.  
+Está diseñado como una **guía de estudio** y un **manual de referencia rápida** para el uso diario.  
+
+> 📌 Distribución utilizada en el curso: **Ubuntu 20.x**  
+> 📌 Importancia: En entornos de servidores y desarrollo, Linux se utiliza a menudo **sin interfaz gráfica**, por lo que dominar la terminal es clave.
+
+---
+
+## I. Fundamentos de la Terminal
+
+Comandos básicos para comenzar a familiarizarse con el entorno Linux:
+
+- **Acceso a la terminal**:  
+  Se puede abrir con clic derecho en el escritorio o buscando “terminal” en el sistema.  
+
+- **`pwd` (print working directory)** → Muestra la **ruta absoluta** del directorio actual.  
+- **`ls` (list)** → Lista archivos y directorios.  
+  - `ls -l` → Vista detallada (permisos, propietario, tamaño, fecha).  
+  - `ls -la` → Incluye archivos ocultos (que comienzan con `.`).  
+- **`clear`** → Limpia la pantalla.  
+- **`man` (manual)** → Abre el manual integrado de cualquier comando.  
+  - Ejemplo: `man ls`  
+  - Para salir, presiona **`q`**.  
+
+---
+
+## II. Gestión de Archivos y Directorios
+
+Comandos del día a día para trabajar con el sistema de archivos:
+
+- **`cd` (change directory)**  
+  - `cd Documentos/` → Moverse a una carpeta.  
+  - `cd ..` → Subir un nivel.  
+  - `cd ~` → Ir al directorio personal.  
+- **`mkdir` (make directory)** → Crea una carpeta nueva.  
+- **`touch`** → Crea un archivo vacío o actualiza la fecha de modificación.  
+- **`echo`** → Muestra texto o lo escribe en archivos.  
+  - `echo "Hola" > archivo.txt` → Sobrescribe.  
+  - `echo "Mundo" >> archivo.txt` → Añade contenido.  
+- **`mv` (move)** → Mueve o renombra archivos/carpetas.  
+- **`cp` (copy)** → Copia archivos.  
+  - `cp -R` → Copia recursivamente carpetas con todo su contenido.  
+- **`rmdir`** → Elimina un directorio vacío.  
+- **`rm`** → Elimina archivos.  
+  - `rm -r` → Elimina una carpeta y todo su contenido (**peligroso, usar con cuidado**).  
+
+---
+
+## III. Visualización y Edición de Archivos
+
+Comandos para leer y explorar archivos:
+
+- **`cat`** → Muestra el contenido completo.  
+- **`head`** → Muestra las **primeras 10 líneas** (por defecto).  
+  - `head -n 20 archivo.txt` → Primeras 20 líneas.  
+- **`tail`** → Muestra las **últimas 10 líneas** (por defecto).  
+  - `tail -n 20 archivo.txt` → Últimas 20 líneas.  
+- **`less`** → Visor interactivo (útil para archivos grandes, permite búsqueda y navegación).  
+
+---
+
+## IV. Editor de Texto: `vi`
+
+`vi` es un editor de texto basado en terminal, muy usado para archivos de configuración y scripts.
+
+### Modos
+- **Modo normal** → Navegación y comandos.  
+- **Modo inserción** → Edición de texto.  
+- **Modo de comandos** (se activa con `:`) → Guardar, salir, etc.  
+
+### Cambio de modos
+- `i` → Insertar antes del cursor.  
+- `a` → Insertar después del cursor.  
+- `Esc` → Regresa a modo normal.  
+
+### Navegación
+- `G` → Ir al final del archivo.  
+- `1G` → Ir al inicio del archivo.  
+- `[n]G` → Ir a la línea *n*.  
+- `$` → Final de línea.  
+- `0` → Inicio de línea.  
+- `/palabra` → Buscar palabra.  
+- `n` → Siguiente coincidencia.  
+- `N` → Coincidencia anterior.  
+
+### Edición
+- `x` → Borrar carácter.  
+- `[n]x` → Borrar *n* caracteres.  
+- `dd` → Borrar línea completa.  
+
+### Copiar y pegar
+- `yy` → Copiar línea.  
+- `[n]yy` → Copiar *n* líneas.  
+- `p` → Pegar después del cursor.  
+
+### Guardar y salir
+- `:w` → Guardar.  
+- `:q` → Salir.  
+- `:q!` → Salir sin guardar.  
+- `:wq` → Guardar y salir.  
+
+---
+
+## V. Compresión y Descompresión
+
+Comandos para empaquetar y desempaquetar archivos:
+
+- **`zip`** → Comprimir en `.zip`.  
+  - `zip -r archivo.zip carpeta/` → Compresión recursiva.  
+  - `zip -q archivo.zip archivo.txt` → Modo silencioso.  
+- **`unzip`** → Extraer `.zip`.  
+  - `unzip archivo.zip` → Extraer en el directorio actual.  
+  - `unzip -l archivo.zip` → Listar contenido.  
+  - `unzip -d destino archivo.zip` → Extraer en una carpeta específica.  
+- **`tar`** → Muy usado en Linux para `.tar.gz`.  
+  - `tar -czvf archivo.tar.gz carpeta/` → Crear y comprimir.  
+  - `tar -xzvf archivo.tar.gz` → Extraer.  
+  - Opciones:  
+    - `c` → Crear  
+    - `x` → Extraer  
+    - `z` → Comprimir con gzip  
+    - `v` → Verbose (mostrar proceso)  
+    - `f` → Nombre de archivo  
+
+---
+
+## VI. Comodines
+
+Permiten trabajar con grupos de archivos med
