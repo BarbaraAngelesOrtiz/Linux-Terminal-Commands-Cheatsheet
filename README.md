@@ -110,3 +110,18 @@ Wildcards help match multiple files:
 Mastering Linux commands requires **practice and experimentation**. Open your terminal, try them out, and combine them to become more efficient in your daily workflow.  
 
 ---
+
+## Author
+**Bárbara Ángeles Ortiz**
+
+<img src="https://github.com/user-attachments/assets/30ea0d40-a7a9-4b19-a835-c474b5cc50fb" width="115">
+
+[LinkedIn](https://www.linkedin.com/in/barbaraangelesortiz/) | [GitHub](https://github.com/BarbaraAngelesOrtiz)
+
+![Status](https://img.shields.io/badge/status-finished-brightgreen) 📅 Agosto 2025
+
+![Python](https://img.shields.io/badge/python-3.10-blue)
+
+## Agradecimientos 
+
+<img width="180" height="180" alt="Screenshot 2025-08-13 034705" src="https://github.com/user-attachments/assets/bdfa03bc-d44a-4848-b622-6bac4e2dbc95" />
