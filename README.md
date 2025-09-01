@@ -118,9 +118,9 @@ Mastering Linux commands requires **practice and experimentation**. Open your te
 
 [LinkedIn](https://www.linkedin.com/in/barbaraangelesortiz/) | [GitHub](https://github.com/BarbaraAngelesOrtiz)
 
-![Status](https://img.shields.io/badge/status-finished-brightgreen) 📅 August 2025
+![Status](https://img.shields.io/badge/status-finished-brightgreen) 📅 September 2025
 
-![Python](https://img.shields.io/badge/python-3.10-blue)
+![Linux](https://img.shields.io/badge/linux-3.10-blue)
 
 ## Acknowledgments
 
