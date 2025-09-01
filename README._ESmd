@@ -128,4 +128,21 @@ Comandos para empaquetar y desempaquetar archivos:
 
 ## VI. Comodines
 
-Permiten trabajar con grupos de archivos med
+Permiten trabajar con grupos de archivos mediante patrones:
+
+- **`?`** → Coincide con **un solo carácter**.  
+  - Ejemplo: `ls archivo?.txt` → `archivo1.txt`, `archivoA.txt`.  
+- **`*`** → Coincide con **cero o más caracteres**.  
+  - Ejemplo: `ls archivo*.txt` → `archivo.txt`, `archivo123.txt`, `archivoABC.txt`.  
+
+---
+
+## 🎯 Notas Finales
+
+Dominar estos comandos te dará una base sólida para **interactuar eficientemente con Linux** desde la terminal.  
+
+Cada comando es como una herramienta en la caja de un artesano: con práctica y experimentación, podrás construir y manipular tu entorno Linux con precisión y agilidad.  
+
+👉 ¡La clave es practicar y probar combinaciones para mejorar tu flujo de trabajo!  
+
+---
